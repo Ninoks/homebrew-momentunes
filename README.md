@@ -9,12 +9,15 @@ lives in a separate private repository.
 ## Install
 
 ```sh
-brew install --cask --no-quarantine Ninoks/momentunes/momentunes
+brew trust Ninoks/momentunes
+brew install --cask Ninoks/momentunes/momentunes
+xattr -dr com.apple.quarantine /Applications/Momentunes.app
 ```
 
-`--no-quarantine` is required while the build is unsigned. Without it macOS
-blocks the first launch and you have to allow the app under System Settings →
-Privacy & Security.
+Homebrew 6 will not load a cask from a third-party tap until you trust it. The
+last line is needed because the build is not notarized yet: it is signed, but
+Gatekeeper still blocks a quarantined download. Opening the app once from
+System Settings → Privacy & Security → **Open Anyway** works too.
 
 Momentunes needs an invitation and a Spotify account that has been added to the
 app's allowlist. Installing it without both does nothing.
