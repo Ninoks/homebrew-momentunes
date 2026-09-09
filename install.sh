@@ -109,7 +109,8 @@ info "Click it and sign in with your email."
 echo
 info "Two things must already be true for it to work:"
 info "  1. Nino invited your email to Momentunes."
-info "  2. Your Spotify account is on the app's allowlist."
+info "  2. The Spotify app is installed. Momentunes asks once for permission"
+info "     to read what it is playing."
 echo
 info "Updates install themselves every $((INTERVAL / 3600))h. Relaunch the app to pick one up."
 info "Update log: $LOG_DIR/updater.log"
