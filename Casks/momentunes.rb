@@ -1,8 +1,8 @@
 cask "momentunes" do
-  version "0.2.0"
-  sha256 "c7e23ff0ca8f1d83bb0b3ec9cda968cb5847562a33e385cb89cadb085fa68bd8"
+  version "0.2.1"
+  sha256 "3ba67108ad7f94011c71c89ef2dfd4a4cf95266c14a4f3d0d74de4e44a348221"
 
-  url "https://github.com/Ninoks/homebrew-momentunes/releases/download/v0.2.0/Momentunes-darwin-arm64-0.2.0.zip"
+  url "https://github.com/Ninoks/homebrew-momentunes/releases/download/v0.2.1/Momentunes-darwin-arm64-0.2.1.zip"
   name "Momentunes"
   desc "Menu-bar app for sharing Spotify listening with approved friends"
   homepage "https://github.com/Ninoks/homebrew-momentunes"
